@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"> <!-- Убедитесь, что здесь установлена кодировка UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+<h1 th:text="${message}"></h1> <!-- Выводит сообщение -->
+<form action="/newPage" method="post"> <!-- Обратите внимание на корректный путь к обработчику -->
+    <label for="name">Введите своё имя:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Отправить</button>
+</form>
+</body>
+</html>
